@@ -1,1 +1,36 @@
-<p>detail-product works!</p>
+<div class="product" *ngIf="_product">
+  <div class="product__property">
+    <div class="product__label">Name:</div>
+    <div class="product__value">{{_product.productName}}</div>
+  </div>
+
+  <div class="product__property">
+    <div class="product__label">Code:</div>
+    <div class="product__value">{{_product.productCode}}</div>
+  </div>
+
+  <div class="product__property">
+    <div class="product__label">Description:</div>
+    <div class="product__value">{{_product.description}}</div>
+  </div>
+
+  <div class="product__property">
+    <div class="product__label">Price:</div>
+    <div class="product__value">{{_product.price}}</div>
+  </div>
+
+  <div class="product__property">
+    <div class="product__label">Rating:</div>
+    <div class="product__value">{{_product.starsRating}}</div>
+  </div>
+
+  <div class="product__property" *ngIf="_product.tags && _product.tags.length">
+    <div class="product__label">Tags:</div>
+    <div class="product__value">{{_product.tags | fromArray}}</div>
+  </div>
+
+  <div class="product__controls">
+    <button class="product__back" (click)="back()">Back</button>
+    <button class="product__edit" (click)="edit()">Edit</button>
+  </div>
+</div>

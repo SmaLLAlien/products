@@ -6,16 +6,20 @@ import { AppComponent } from './containers/app/app.component';
 import {ProductsModule} from '../products/products.module';
 import {SharedModule} from '../shared/shared.module';
 import {HttpClientModule} from '@angular/common/http';
+import {HomeComponent} from './components/home/home.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     ProductsModule,
     SharedModule,
     HttpClientModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],

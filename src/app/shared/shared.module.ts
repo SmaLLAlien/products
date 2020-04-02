@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './components/home/home.component';
+import {RouterModule} from '@angular/router';
+import { FromArrayPipe } from './pipes/from-array.pipe';
 
 
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [FromArrayPipe],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
-  exports: [HomeComponent]
+  exports: [
+    FromArrayPipe
+  ]
 })
 export class SharedModule { }

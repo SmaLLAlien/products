@@ -1,1 +1,5 @@
-<router-outlet></router-outlet>
+<app-list-products
+  *ngFor="let product of products | async"
+  [product]="product"
+  (edited)="onEdit($event)"
+  (detailed)="openDetail($event)"></app-list-products>

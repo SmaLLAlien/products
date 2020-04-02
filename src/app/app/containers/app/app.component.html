@@ -1,2 +1,24 @@
-<app-home></app-home>
-<router-outlet></router-outlet>
+<div class="wrapper">
+<div class="header">
+  <div class="logo">Product Managment</div>
+  <ul class="navigation">
+    <li class="navigation__list">
+      <a [routerLink]="['/home']" routerLinkActive="active" class="navigation__item">Home</a>
+    </li>
+    <li class="navigation__list">
+      <a [routerLink]="['/products']" routerLinkActive="active" class="navigation__item">Product List</a>
+    </li>
+    <li class="navigation__list">
+      <a [routerLink]="['/add']" routerLinkActive="active" class="navigation__item">Add Product</a>
+    </li>
+  </ul>
+</div>
+
+  <div class="content">
+    <div class="content__head"></div>
+    <div class="content__body">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+

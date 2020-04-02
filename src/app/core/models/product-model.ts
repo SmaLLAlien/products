@@ -5,4 +5,5 @@ export interface IProductModel {
   starsRating: string;
   tags?: string[];
   description: string;
+  price?: string;
 }

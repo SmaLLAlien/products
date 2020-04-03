@@ -1,3 +1,12 @@
+<div class="wrapper">
+  <div class="product">
+    <div class="product__column">Name</div>
+    <div class="product__column">Code</div>
+    <div class="product__column">Price</div>
+    <div class="product__column">5 star Rating</div>
+    <div class="product__column"></div>
+  </div>
+</div>
 <app-list-products
   *ngFor="let product of products | async"
   [product]="product"

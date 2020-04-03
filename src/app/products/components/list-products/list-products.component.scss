@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid lightgray;
+  padding-top: 20px;
 
   &__column {
     display: flex;
@@ -14,5 +15,30 @@
     justify-content: center;
     margin-bottom: 20px;
     width: 20%;
+    box-sizing: border-box;
+  }
+
+  &__name {
+    cursor: pointer;
+    color: #03A9F4;
+  }
+
+  &__name:hover {
+    color: #3270e6;
+  }
+
+  &__edit {
+    padding: 5px 15px;
+    color: #fff;
+    background: #3270e6;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__edit:hover {
+    background: #17a2b8;
   }
 }

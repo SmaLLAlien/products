@@ -1,0 +1,43 @@
+.product {
+  width: 100%;
+
+  &__property {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  &__label {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2%;
+    color: #3270e6;
+  }
+
+  &__controls {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 12%;
+  }
+
+  &__back,
+  &__edit {
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: #fff;
+    cursor: pointer;
+
+  }
+
+  &__back {
+    background: #6c757d;
+  }
+
+  &__edit {
+    background: #007bff;
+  }
+}

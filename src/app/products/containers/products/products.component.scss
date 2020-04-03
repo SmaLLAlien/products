@@ -1,0 +1,20 @@
+.wrapper {
+  width: 100%;
+}
+
+.product {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  box-sizing: border-box;
+  padding-top: 20px;
+  border-bottom: 1px solid lightgray;
+  color: #03A9F4;
+  font-weight: 900;
+
+  &__column {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 5px 0;
+  }
+}

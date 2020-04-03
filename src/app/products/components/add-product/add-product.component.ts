@@ -60,6 +60,13 @@ export class AddProductComponent implements OnInit, OnChanges {
     if (changes.product && changes.product.currentValue) {
       this.formInit();
       this.productForm.patchValue(this.product);
+
+      if (this.product.tags && this.product.tags.length) {
+        this.product.tags.forEach(tag => {
+          this.tags.push(this.fb.control([`${tag}`]));
+        });
+      }
+
     }
   }
 

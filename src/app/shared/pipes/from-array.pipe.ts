@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FromArrayPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
+  transform(value: string[], ...args: unknown[]): unknown {
     return value.reduce((acc, item) => acc += `${item.trim()} `);
   }
 }

@@ -1,28 +1,23 @@
 <div class="wrapper">
   <div *ngIf="product" class="product">
     <div class="product__column" >
-      <div>Product</div>
-      <div (click)="openDetail()">{{product.productName}}</div>
+      <div class="product__name" (click)="openDetail()">{{product.productName}}</div>
     </div>
 
     <div class="product__column">
-      <div>Code</div>
       <div>{{product.productCode}}</div>
     </div>
 
     <div class="product__column">
-      <div>Price</div>
-      <div>{{product.price}}</div>
+      <div>{{product.price | currency}}</div>
     </div>
 
     <div class="product__column">
-      <div>5 star Rating</div>
       <div>{{product.starsRating}}</div>
     </div>
 
     <div class="product__column">
-      <div></div>
-      <div><button (click)="edit()">Edit</button></div>
+      <div><button class="product__edit" (click)="edit()">Edit</button></div>
     </div>
   </div>
 

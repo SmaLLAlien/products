@@ -17,8 +17,6 @@ export class DetailProductComponent implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.product && changes.product.currentValue) {
       this._product = changes.product.currentValue;
-      console.log(this._product);
-      console.log(changes, 'changes');
     }
   }
 
